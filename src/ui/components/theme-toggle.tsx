@@ -6,19 +6,23 @@ import { useTheme } from "next-themes";
 export function ThemeToggle() {
   const { setTheme } = useTheme();
   return (
-    <div className={"my-4 flex flex-row gap-4 text-black dark:text-zinc-400"}>
+    <div className={"flex flex-row gap-4 text-black dark:text-zinc-400"}>
       <MoonIcon
         onClick={() => setTheme("dark")}
-        width={17}
-        height={17}
-        className={"cursor-pointer rounded-full"}
+        width={15}
+        height={15}
+        className={
+          "cursor-pointer rounded-full dark:hover:text-white hover:text-black"
+        }
       />
 
       <SunIcon
         onClick={() => setTheme("light")}
-        width={17}
-        height={17}
-        className={"cursor-pointer rounded-full"}
+        width={15}
+        height={15}
+        className={
+          "cursor-pointer rounded-full dark:hover:text-white hover:text-black"
+        }
       />
     </div>
   );

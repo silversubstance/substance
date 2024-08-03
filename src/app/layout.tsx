@@ -4,9 +4,8 @@ import { fonts } from "@/lib/fonts";
 import { ThemeProvider } from "@/lib/providers/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Next Essential",
-  description:
-    "Next.js Essential - An Essential Template to build an modern next.js application with all the essentials included.",
+  title: "Substance",
+  description: "Silver Substance, Empowering Developers.",
   icons: {
     icon: "favicon.png",
   },
@@ -20,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fonts.GeistSans.variable} ${fonts.GeistMono.variable} font-geistMono`}
+      className={`${fonts.GeistSans.variable} ${fonts.GeistMono.variable} font-geistSans`}
       suppressHydrationWarning
     >
       <body>
